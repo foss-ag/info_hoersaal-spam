@@ -1,0 +1,122 @@
+% Compile using LuaLaTeX!
+
+\documentclass{beamer}
+
+% Beamer
+\usetheme{Warsaw} % or split
+\usecolortheme{grass}
+\setbeamercovered{transparent}
+% Navigation ausblenden
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
+
+% Zeilenabstand verringer
+\renewcommand{\baselinestretch}{0.9}
+
+% more flexible than babel. Requires LuaLaTeX or XeTeX
+\usepackage{polyglossia}
+\setdefaultlanguage{german}
+
+% LuaTeX and XeTeX (but LuaLaTeX is cooler) -> fontspec
+\usepackage{fontspec}
+
+% extra symbols
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage{multimedia}
+
+\usepackage{hyperref}
+% Hyperref Optionen - makeatletter/AtBeginDocument erlaubt uns Titel/Author dynamisch zu setzen, wenn gewollt
+\makeatletter
+\hypersetup{
+	unicode = true,
+	pdftoolbar = true,
+	pdfmenubar = true,
+	pdffitwindow = true,
+	pdftitle = {\@title},
+	pdfauthor = {\@author},
+	pdfsubject = {PING e.V. und FOSS-AG},
+	colorlinks = true,
+	linkcolor = black,
+	citecolor = black,
+	filecolor = black,
+	urlcolor = black
+}
+\makeatother
+
+\usepackage[]{graphicx}
+\usepackage{listings}
+\usepackage{pdfpages}
+\usepackage{color}
+\definecolor{tuGreen}{rgb}{0.517,0.721,0.094}
+\definecolor{tuOrange}{rgb}{1.0,0.7176,0.0}
+\definecolor{brightGray}{gray}{0.9}
+\definecolor{darkGray}{gray}{0.2}
+\definecolor{white}{rgb}{1,1,1}
+\definecolor{black}{rgb}{0,0,0}
+\definecolor{red}{rgb}{1,0,0}
+
+
+% Abkuerzungen richtig formatieren
+\usepackage{xspace}
+\newcommand{\vgl}{vgl.\xspace} 
+\newcommand{\zB}{z.\,B.\xspace}
+\newcommand{\dahe}{d.\,h.\nolinebreak[4]\xspace}
+\newcommand{\uvm}{u.\,v.\,m.\xspace}
+\newcommand{\usw}{u.\,s.\,w.\xspace}
+\newcommand{\sg}{s.\,g.\xspace}
+\newcommand{\iA}{i.\,A.\xspace}
+\newcommand{\sa}{s.\,a.\xspace}
+\newcommand{\su}{s.\,u.\xspace}
+\newcommand{\ua}{u.\,a.\xspace}
+\newcommand{\og}{o.\,g.\xspace}
+\newcommand{\oae}{o.\,\"a.\xspace}
+\newcommand{\oBdA}{o.\,B.\,d.\,A.\xspace}
+\newcommand{\OBdA}{O.\,B.\,d.\,A.\xspace}
+
+% footnote ohne marker blfootnote
+\newcommand\blfootnote[1]{%
+	\begingroup
+	\renewcommand\thefootnote{}\footnote{#1}%
+	\addtocounter{footnote}{-1}%
+	\endgroup
+}
+
+
+\author{FOSS-AG}
+\date{\today}
+
+\subject{Einladung}
+\title{Vorstellung}
+\subtitle{\textcolor{black}{F}ree and \textcolor{black}{O}pen \textcolor{black}{S}ource \textcolor{black}{S}oftware \textcolor{black}{- AG}}
+
+\begin{document}	
+	\begin{frame}
+		\begin{center}
+		{\large \textbf{FOSS-AG TU Dortmund}}
+		\end{center}
+	
+		\vspace{0.2cm}
+		\begin{minipage}{0.56\linewidth}
+			Was machen wir?
+			\begin{itemize}
+				\item wöchentliche Treffen in der Universität
+				\item Veranstaltung rund um die Themen Linux und Free-Software
+				\begin{itemize}
+					\item Installpartys
+					\item Terminal- und Programmierkurse
+					\item Raspberry Pi
+				\end{itemize}
+				\item Kooperationen mit lokalen Hackspaces
+				\item Weitere Infos: \textbf{www.foss-ag.de}
+			\end{itemize}
+		\end{minipage}
+	
+		\hspace*{0.8\linewidth}
+		\begin{minipage}{0.35\linewidth}
+			\includegraphics[scale=0.2]{resources/tux}
+		\end{minipage}
+	\end{frame}
+\end{document}
