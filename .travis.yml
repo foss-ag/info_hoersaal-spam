@@ -10,7 +10,7 @@ script:
 deploy:
   skip_cleanup: true
   provider: script
-  script: wget https://raw.githubusercontent.com/foss-ag/script_deploy-artifact/master/deploy-artifact.sh ; shopt -s globstar ; sh deploy-artifact.sh **/*.pdf
+  script: wget https://raw.githubusercontent.com/foss-ag/script_deploy-artifact/master/deploy-artifact.sh ; sh deploy-artifact.sh FOSS-AG-ad/*.pdf ; sh deploy-artifact.sh LDD2017/*.pdf ; sh deploy-artifact.sh ophasews1718/*.pdf
   on:
     all_branches: true
 addons:
