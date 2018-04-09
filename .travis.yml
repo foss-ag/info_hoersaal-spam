@@ -1,11 +1,11 @@
 # Using the container-based Ubuntu 14.04 Trusty setup
 language: shell
 script:
-  - cd ~/FOSS-AG-ad
+  - cd FOSS-AG-ad
   - latexmk -pdf -f -latexoption="--interaction=nonstopmode"
-  - cd ~/LDD2017
+  - cd ../LDD2017
   - latexmk -pdf -f -latexoption="--interaction=nonstopmode"
-  - cd ~/ophasews1718
+  - cd ../ophasews1718
   - latexmk -pdf -f -latexoption="--interaction=nonstopmode"
 deploy:
   skip_cleanup: true
