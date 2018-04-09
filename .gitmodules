@@ -1,3 +1,3 @@
-[submodule "design_latex-template"]
-	path = design_latex-template
+[submodule "ophasews1718/design_latex-template"]
+	path = ophasews1718/design_latex-template
 	url = https://github.com/foss-ag/design_latex-template.git
