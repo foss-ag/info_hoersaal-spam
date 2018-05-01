@@ -1,0 +1,61 @@
+% Compile using LuaLaTeX!
+
+\documentclass{beamer}
+
+% Beamer
+\usetheme{Warsaw} % or split
+\usecolortheme{grass}
+\setbeamercovered{transparent}
+% Navigation ausblenden
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
+
+% Zeilenabstand verringer
+\renewcommand{\baselinestretch}{0.9}
+
+% more flexible than babel. Requires LuaLaTeX or XeTeX
+\usepackage{polyglossia}
+\setdefaultlanguage{german}
+
+% LuaTeX and XeTeX (but LuaLaTeX is cooler) -> fontspec
+\usepackage{fontspec}
+
+% extra symbols
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{multimedia}
+\usepackage{hyperref}
+\usepackage[]{graphicx}
+\graphicspath{{../resources/}}
+\usepackage{listings}
+\usepackage{pdfpages}
+\usepackage{color}
+
+\author{FOSS-AG}
+\title{Vorstellung}
+
+\begin{document}	
+	\begin{frame}
+		\vspace{0.2cm}
+		\begin{minipage}{0.56\linewidth}
+			\begin{itemize}
+				\item wöchentliche Treffen
+				\item Veranstaltung rund um die Themen Linux und Free-Software
+				\begin{itemize}
+					\item Installpartys
+					\item Themenabende
+					\item Workshops
+					\item Hack'n'Snack
+				\end{itemize}
+				\item Kooperationen mit lokalen Hackspaces
+				\item Weitere Infos: \textbf{www.foss-ag.de}
+			\end{itemize}
+		\end{minipage}
+	
+		\hspace*{0.8\linewidth}
+		\begin{minipage}{0.35\linewidth}
+			\includegraphics[scale=0.2]{tux}
+		\end{minipage}
+	\end{frame}
+\end{document}
