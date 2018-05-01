@@ -4,10 +4,11 @@
 
 % Beamer
 \usetheme{Warsaw} % or split
-\usecolortheme{grass}
+%\usecolortheme{grass}
 \setbeamercovered{transparent}
 % Navigation ausblenden
 \setbeamertemplate{navigation symbols}{}%remove navigation symbols
+\setbeamertemplate{footline}{}
 
 % Zeilenabstand verringer
 \renewcommand{\baselinestretch}{0.9}
@@ -27,7 +28,6 @@
 \usepackage{multimedia}
 \usepackage{hyperref}
 \usepackage[]{graphicx}
-\graphicspath{{../resources/}}
 \usepackage{listings}
 \usepackage{pdfpages}
 \usepackage{color}
@@ -37,8 +37,9 @@
 
 \begin{document}	
 	\begin{frame}
-		\vspace{0.2cm}
-		\begin{minipage}{0.56\linewidth}
+		\includegraphics[scale=0.2]{../resources/text-vertikal-transp.png}
+		\hspace{0.5cm}
+		\begin{minipage}{0.65\linewidth}
 			\begin{itemize}
 				\item wöchentliche Treffen
 				\item Veranstaltung rund um die Themen Linux und Free-Software
@@ -49,13 +50,12 @@
 					\item Hack'n'Snack
 				\end{itemize}
 				\item Kooperationen mit lokalen Hackspaces
-				\item Weitere Infos: \textbf{www.foss-ag.de}
+				\item Weitere Infos:
+				\begin{itemize}
+					\item[] \textbf{https://foss-ag.de}
+					\item[] \textbf{https://hackandsnack.de}
+				\end{itemize}
 			\end{itemize}
-		\end{minipage}
-	
-		\hspace*{0.8\linewidth}
-		\begin{minipage}{0.35\linewidth}
-			\includegraphics[scale=0.2]{tux}
 		\end{minipage}
 	\end{frame}
 \end{document}
